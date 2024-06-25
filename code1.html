@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to my Web Page</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #b67272;
+    text-align: center;
+    padding: 20px;
+  }
+
+  h1 {
+    color: #c60f61;
+    font-size: 3em;
+    margin-top: 50px;
+    position: relative;
+    animation: pulse 0.5s infinite alternate;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #aababd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(84, 44, 44, 0.1);
+    opacity: 0;
+    animation: slideIn 1s forwards;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .animated-box {
+    width: 100px;
+    height: 100px;
+    background-color: #5ec47d;
+    margin: 20px auto;
+    border-radius: 70%;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .fade-in {
+    opacity: 10;
+    animation: fadeInAnimation 2s ease-in-out forwards;
+  }
+
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 20;
+    }
+    100% {
+      opacity: 18;
+    }
+  }
+
+  .animated-box:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgba(13, 137, 220, 0.8);
+  }
+</style>
+</head>
+<body>
+
+<h1>Welcome to My Colorful Animated Web Page</h1>
+
+<div class="container">
+  <div class="animated-box"></div>
+  <p class="fade-in" style="color: #3170ae;">This text fades in when the container slides in!</p>
+</div>
+
+</body>
+</html>
